@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('http://www.officelovin.com/wp-content/uploads/2015/05/nclud-washington-dc-office-hh-740x464.jpg');
+      background-size: cover;
+      color: black;
+    }
+    a {
+      color: white;
+      font-size: 20;
+    }
+    h1 {
+      font-family: 'Special Elite', cursive;
+      font-size: 80px;
+      text-shadow: 2px 2px 8px #D3D3D3;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 2px solid black;
+      border-radius: 10px;
+      box-shadow: 2px 2px 8px #D3D3D3;
+    }
+    ul {
+      padding: 20px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    
+    .grey {
+     background: #EDEDED; 
+    }
+    
+    button {
+     width: 60px;
+     height: 30;
+     border-radius: 10px;
+     font-size: 20;
+    }
+    
+    h2 {
+      font-family: 'Rock Salt', cursive;  
+    }
+    
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt|Special+Elite" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="http://i.imgur.com/6XKD2Y4m.jpg">
+    <h1>Chris' Blog</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Recent Work</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+  <div class="grey">
+  <article>
+    <h2>Daily Coding Adventures</h2>
+    <p>github test</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Online Resources</h2>
+    <p>github test</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Algorithms!</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <button>Like</button>
+  </article>
+  </div>
+  <script>
+    $("button").on("click", function() {
+      alert("Thanks for the Like!");
+    });
+    
+    $("button").hover(function() {
+      $(this).css("background-color", "yellow");
+    }, function(){
+    $(this).css("background-color", "#C6C6C6");
+    });
+  </script>
+</body>
